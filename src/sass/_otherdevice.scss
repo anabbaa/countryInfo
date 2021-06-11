@@ -1,0 +1,131 @@
+
+  @media  screen and (max-width: 800px){
+    body{
+      background-color: rgba(0, 0, 0, 0.774);
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  .title{
+    font-size: 2rem;
+    color: red;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    top: -8vh;
+  }
+  .father{
+    position: relative;
+    right: 2vh;
+    height: 70vh;
+    width: 77vw;
+    background-color: blue;
+  }
+    
+  input{
+      width: 47vw;
+      height: 4vh;
+      font-size: 2rem;
+      border: none;
+      outline: none;
+      text-align: center;
+      background-color: transparent;
+      border-bottom: 1px solid red ;
+  }
+  button{
+      height: 4vh;
+      width: 18vw;
+      font-size: 1rem;
+      background-color: blue;
+      font-weight: bolder;
+  }
+   
+  p{
+    color: red;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 2vh;
+    line-height: 2px;
+  }
+  .currency{
+    color: red;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 8vh;
+    left: 2vw;
+  }
+  .lang{
+    color: red;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    left: 2vw;
+    top: 10vh;
+  }
+   .border{    
+      color:red;
+      font-size: 1.6rem;
+      height: 8vh;
+      width: 70vw;
+      text-align: center;
+      word-break: break-all;
+      font-weight: bolder;
+      position: relative;
+      top: 4vh;
+   }
+  // flag with its movement
+  .Flag{
+    width: 22vh;
+    height: 22vw;
+    position: relative;
+    left: 30vw;
+    top: 12vh;
+    animation-name: flap;
+    animation-duration: 3s;
+    animation-timing-function:ease-out;
+  }
+  @keyframes flap {
+    
+    25% {
+      transform: scale(1);
+    }
+    50% {
+        transform: scale(-1);
+      }
+      75% {
+        transform: Scale(1);
+      }
+      100% {
+        transform: scale(-1);
+      }
+  }
+//loading with its movement
+h1{
+    margin-left: 1vw;
+  }
+  .load{
+    width: 2vw;
+    height: 3vh;
+    border: 55px solid #999;
+    border-radius: 50%;
+    animation: load 100ms infinite linear;
+  }
+  
+  @keyframes load{
+    from{
+      transform: rotate(0);
+  
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  }
