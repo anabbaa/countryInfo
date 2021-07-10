@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/anabbaa.github.io/countryInfo/static/css/main.111f45c9.chunk.css",
-    "main.js": "/anabbaa.github.io/countryInfo/static/js/main.a8881d67.chunk.js",
-    "main.js.map": "/anabbaa.github.io/countryInfo/static/js/main.a8881d67.chunk.js.map",
+    "main.css": "/anabbaa.github.io/countryInfo/static/css/main.c2cff0fa.chunk.css",
+    "main.js": "/anabbaa.github.io/countryInfo/static/js/main.a78d3cc8.chunk.js",
+    "main.js.map": "/anabbaa.github.io/countryInfo/static/js/main.a78d3cc8.chunk.js.map",
     "runtime-main.js": "/anabbaa.github.io/countryInfo/static/js/runtime-main.ac61d4ec.js",
     "runtime-main.js.map": "/anabbaa.github.io/countryInfo/static/js/runtime-main.ac61d4ec.js.map",
     "static/js/2.f375e562.chunk.js": "/anabbaa.github.io/countryInfo/static/js/2.f375e562.chunk.js",
     "static/js/2.f375e562.chunk.js.map": "/anabbaa.github.io/countryInfo/static/js/2.f375e562.chunk.js.map",
     "index.html": "/anabbaa.github.io/countryInfo/index.html",
-    "static/css/main.111f45c9.chunk.css.map": "/anabbaa.github.io/countryInfo/static/css/main.111f45c9.chunk.css.map",
+    "static/css/main.c2cff0fa.chunk.css.map": "/anabbaa.github.io/countryInfo/static/css/main.c2cff0fa.chunk.css.map",
     "static/js/2.f375e562.chunk.js.LICENSE.txt": "/anabbaa.github.io/countryInfo/static/js/2.f375e562.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ac61d4ec.js",
     "static/js/2.f375e562.chunk.js",
-    "static/css/main.111f45c9.chunk.css",
-    "static/js/main.a8881d67.chunk.js"
+    "static/css/main.c2cff0fa.chunk.css",
+    "static/js/main.a78d3cc8.chunk.js"
   ]
 }
