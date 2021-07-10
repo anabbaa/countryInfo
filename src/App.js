@@ -10,7 +10,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 2000);
   }, []);
   //we need here staus because thi API is changeable
   const getCountry = (status, countryName)=>{
@@ -18,8 +18,6 @@ const App = () => {
     let textToUrl = encodeURIComponent(userInput);
     console.log(textToUrl);
     let endPoint = `https://restcountries.eu/rest/v2/${status}/${textToUrl}`;
-
-  
 
     axios(endPoint)
       .then(({ data }) => setResults(data))
