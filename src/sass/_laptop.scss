@@ -1,5 +1,5 @@
 
-@media  screen and (min-width: 800px){
+@media  screen and (min-width: 1024px){
     body{
         background-color: rgba(0, 0, 0, 0.774);
         height: 100vh;
@@ -19,7 +19,7 @@
     }
     .father{
       position: relative;
-      height: 77vh;
+      height: 79vh;
       width: 77vw;
       background-color:blue;
     }
@@ -58,8 +58,8 @@
       width: 44vw;
       height: 2vh;
       position: relative;
-      top: 6vh;
-    left: 28vh;
+      top: 2vh;
+    left: 30vh;
     }
     .lang{
       color: red;
@@ -69,14 +69,14 @@
       width: 44vw;
       height: 2vh;
       position: relative;
-      top: 6vh;
-    left: 28vh;
+      top: 2vh;
+    left: 30vh;
     }
      .border{
         color: red;
         font-size: 34px;
         position: relative;
-        top: 7vh;
+        top: 1vh;
     right: -1vw;
         font-weight: bolder;
         text-align: center;
@@ -86,9 +86,12 @@
     
     .Flag{
       width: 22vh;
-      height: 22vw;
+      max-width: 100%;
+      height: 22;
+      max-height: 100% ;
       position: relative;
       left: 32vw;
+      top: 1vh;
       animation-name: flap;
       animation-duration: 3s;
       animation-timing-function:ease-out;

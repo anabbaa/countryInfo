@@ -12,7 +12,9 @@ const App = () => {
       setLoading(false);
     }, 5000);
   }, []);
+  //we need here staus because thi API is changeable
   const getCountry = (status, countryName)=>{
+    // this method transfer can understand any input which is in English
     let textToUrl = encodeURIComponent(userInput);
     console.log(textToUrl);
     let endPoint = `https://restcountries.eu/rest/v2/${status}/${textToUrl}`;

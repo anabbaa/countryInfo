@@ -1,5 +1,7 @@
 
-  @media  screen and (max-width: 800px){
+
+
+  @media (max-width: 1024px){
     body{
       background-color: rgba(0, 0, 0, 0.774);
       height: 100vh;
@@ -53,13 +55,13 @@
     line-height: 2px;
   }
   .currency{
-    color: red;
+    color:red;
     font-size: 1.5rem;
     text-align: center;
     font-weight: bolder;
     position: relative;
-    top: 8vh;
-    left: 2vw;
+    top: -4vh;
+    left: 0vw;
   }
   .lang{
     color: red;
@@ -67,8 +69,8 @@
     text-align: center;
     font-weight: bolder;
     position: relative;
-    left: 2vw;
-    top: 10vh;
+    left: 0vw;
+    top: -3vh;
   }
    .border{    
       color:red;
@@ -79,11 +81,14 @@
       word-break: break-all;
       font-weight: bolder;
       position: relative;
-      top: 4vh;
+      top: 1vh;
+      left: 1.5vw;
    }
   // flag with its movement
   .Flag{
     width: 22vh;
+    max-width: 100%;
+    max-height: 100%;
     height: 22vw;
     position: relative;
     left: 30vw;
@@ -129,3 +134,38 @@ h1{
     }
   }
   }
+  @media (max-width: 800px){
+input{
+  font-size: 1rem;
+}
+
+
+  }
+@media (max-width: 500px){
+  
+
+input{
+  font-size: 1rem;
+}
+}
+@media (max-width: 375px){
+  .currency{
+    color: #000;
+  }
+  
+  p{
+    height: 2vh;
+    white-space: pre;
+  }
+  .father{
+    width: 99vw;
+  }
+  button{
+    width: 22vw;
+  }
+  
+  input{
+    width: 60vw;
+  }
+  
+}

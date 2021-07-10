@@ -11,17 +11,17 @@ const Country = ({ results, getCountry }) => {
         <p>{name}</p>
         <p>Capital: {capital}</p>
         <p>Population: {population}</p>
-        
+        {/*if we have array inside Api we need to distract array*/}
         <div className="border">Border:
-          {borders.map((border, i) => (
-            <span  key={i} onClick={() => getCountry("name", border)}>
-                 &nbsp;&nbsp;{border}
-            </span>
+          {borders.map((border,i)=>(
+            <span key={i} onClick={()=> getCountry ("name", border)}> 
+                &nbsp;&nbsp;{border}</span>
           ))}
         </div>
         
         <p className="currency">Currency: {currencies.map((currency)=>(
-          <span onClick={()=> getCountry("currency", currency.name)}>{currency.name}</span>
+          <span onClick={()=> getCountry("currency", currency.name)}>
+             &nbsp;&nbsp;{currency.name}</span>
         ))}
 
         </p>
@@ -30,7 +30,7 @@ const Country = ({ results, getCountry }) => {
           language:
           {languages.map((lang) => (
             <span onClick={() => getCountry("lang", lang.iso639_1)}>
-              {lang.name}
+               &nbsp;&nbsp;{lang.name}
             </span>
           ))}
         </p>
