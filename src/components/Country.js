@@ -1,45 +1,56 @@
 import React from "react";
-
-const Country = ({ results, getCountry }) => {
-  const lands = results.map((obj, i) => {
-    console.log(obj);
-    const { name, flag, capital, population, borders, languages, currencies } = obj;
-    return (
-      <div >
-       <div className="father" key={i} >
-        
-        <p>{name}</p>
-        <p>Capital: {capital}</p>
-        <p>Population: {population}</p>
-        {/*if we have array inside Api we need to distract array*/}
-        <div className="border">Border:
-          {borders.map((border,i)=>(
-            <span key={i} onClick={()=> getCountry ("name", border)}> 
-                &nbsp;&nbsp;{border}</span>
-          ))}
+const Country = ({ results, getCountry })=>{
+  console.log(results);
+  const newdata = Object.entries(results).map(([key,value], i)=>{
+    console.log(value);
+    return(
+      <div className="father">
+        <div className="flexRow">
+        <span >Name:</span><p >{value.name.common}</p> 
         </div>
-        
-        <p className="currency">Currency: {currencies.map((currency)=>(
-          <span onClick={()=> getCountry("currency", currency.name)}>
-             &nbsp;&nbsp;{currency.name}</span>
-        ))}
+        <div className="flexRow">
 
-        </p>
+        <span >Capital::</span> <p>{value.capital}</p>
+        </div>
+        <div className="flexRow">
 
-        <p className="lang">
-          language:
-          {languages.map((lang) => (
-            <span onClick={() => getCountry("lang", lang.iso639_1)}>
-               &nbsp;&nbsp;{lang.name}
-            </span>
-          ))}
-        </p>
-        <img src={flag} alt={name} className="Flag" />
+        <span >Population::</span><p>{value.population}</p>
+        </div>
+        <div className="flexRow">
+          {/* here i want to map because i have object inside object in api */}
+
+        <span >Language:</span><p className="fatherlanguage">{Object.entries(value.languages).map(([ele], i)=>{
+          return(
+            <div className="father-lang-info">
+              <p>{ele}</p>
+            </div>
+          )
+        })}</p>
+        </div>
+        <div className="flexRow">
+                    {/*here i used join to with citeria which is space to make spaces bwtween borders */}
+        <span >Borders:</span> <div className="border-father"><p className="borders">	{value.borders.join(" ")}</p></div>
+        </div>
+              <div className="flexRowCurrency">
+        <span>Currency:</span><div className="currency">{Object.entries(value.currencies).map(([key,value], i)=>{
+          return(
+            <div className="currencyInfo">
+            <p>{value.name}</p><p>{value.symbol}</p>
+            </div>
+          )
+        })}</div>
+        </div>
+      
+        <div className="flaFather">
+              <img src={value.flags.png}/>
+              </div>
       </div>
-      </div> 
-    );
-  });
-
-  return <React.Fragment>{lands}</React.Fragment>;
-};
+    )
+  })
+  return <React.Fragment>
+    <p >
+      {newdata}   
+    </p>
+  </React.Fragment>;
+}
 export default Country;

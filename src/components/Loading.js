@@ -3,11 +3,12 @@ import React from "react";
 const Loading = ()=>{
     return (
         <React.Fragment>
-      <div >
+          <div className="father-load" >
         <div className="load"></div>
-        <h1>Loading</h1>
+        <h2 className="load-word">Loading</h2>
       </div>
-              </React.Fragment>  
+              </React.Fragment>
       );
+          
 };
 export default Loading;
