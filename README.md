@@ -1,4 +1,4 @@
-![Screenshot from 2021-07-10 21-18-54](https://user-images.githubusercontent.com/75792585/125174294-8704a400-e1c4-11eb-9a58-314960ee1750.png)
+![Screenshot (142)](https://github.com/anabbaa/countryInfo/assets/75792585/279b350a-2a9d-4515-95a5-bcdda364f690)
 
 # __Country Information__
 
