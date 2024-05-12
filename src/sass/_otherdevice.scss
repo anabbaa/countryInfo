@@ -10,7 +10,7 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
       body{
-               background-color: rgba(0, 0, 0, 0.774);
+               background-color:#fff;
                height: 100vh;
                width: 97vw;
                display: flex;
@@ -28,7 +28,7 @@ html {
                     width: 80vw;
                     }
                     .fatherInput{
-                      height: 10vh;
+                      height: 20vh;
                       display: flex;
                       align-items: center;
                       justify-content: space-between;
@@ -38,7 +38,6 @@ html {
                       }
                       .title{
                         font-size: 3rem;
-                       color: red;
                        @include responsive(minmobile){
                         font-size: 2rem;
                         text-align: center;
@@ -73,7 +72,7 @@ html {
     justify-content: space-between;
     align-items: center;
     height: 80vh;
-     background-color: rgb(36, 107, 6);
+     background-color: gainsboro ;
      @include responsive(tab){
       height: 100vh;
     }
@@ -167,7 +166,9 @@ html {
       }
   }
   span{
-    color: #ffffff;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: bolder;
   }
   p{
     color: b;
@@ -175,7 +176,6 @@ html {
     margin-left: 2vh;
   }
   ::placeholder{
-    color: rgb(0, 217, 255);
     @include responsive(mobile){
       font-size: 1rem;
     }
